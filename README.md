@@ -15,7 +15,7 @@ Particle hit features | Phi Coordinate | Theta coordinate | Bending angle | Time
 The second array ‘parameters’ contains 3 columns.
 
 Column | 0 | 1 | 2 
---- | --- | --- 
+--- | --- | --- | ---
 Parameters | q/pt | Phi angle | Eta angle
 
 <br>
