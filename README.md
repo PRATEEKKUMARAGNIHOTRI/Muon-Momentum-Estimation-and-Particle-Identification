@@ -19,3 +19,7 @@ Column | 0 | 1 | 2
 Parameters | q/pt | Phi angle | Eta angle
 
 Note: in the dataset, a unit in phi is 1/60 = 0.01667 deg, a unit in theta is approx 0.285 deg.
+
+## Dataset for Task 3
+Task 3 uses ParticleNet’s data for Quark/Gluon jet classification available [here](https://zenodo.org/record/3164691#.Xk1VwS2B1QI).<br> 
+In particle physics, a jet is associated with a spray of particles spread across the detector, and we are interested in identifying the elementary particle that initiated the decays forming this jet. The dataset contains 2 million jet events detected at CMS with a transverse momentum range p_T^{jet}\in\left[500,550\right]\ GeV and rapidity |y|<1.7. These jets were constructed with the anti-kt algorithm with R=0.4. The dataset contains information about the particles in each jet. It is split into 20 Npz files  each of which contains 2 Numpy arrays: X of shape (100000,M,4) where 100,000 is the number of jets per file,  M is the max multiplicity of the jets and 4 is the number of features per point cloud (particle). The four features are the particle’s pt, rapidity, azimuthal angle and pdgid. The second Numpy file y and contains the class label for each jet: label 0 is assigned for gluons and label 1 for quarks.  
