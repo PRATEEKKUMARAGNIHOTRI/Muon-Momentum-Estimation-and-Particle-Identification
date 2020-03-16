@@ -12,7 +12,7 @@ Column range | 0-11 | 12-23 | 24-35 | 36-47 | 48-59 | 60-71 | 72-83 | 84 | 85 | 
 Particle hit features | Phi Coordinate | Theta coordinate | Bending angle | Time info | Ring number | Front/rear hit | Mask | Pattern straightness | Zone | Median theta 
 
 <br>
-The second array ‘parameters’ contains 3 columns.<br>
+The second array ‘parameters’ contains 3 columns.<br><br>
 
 Column | 0 | 1 | 2 
 --- | --- | --- | ---
