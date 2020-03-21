@@ -1,5 +1,5 @@
 # Muon-Momentum-Estimation-and-Particle-Identification
-Muon momentum estimation using GNNs and other deep learning variants
+Muon momentum estimation and particle type identification using GNNs and other deep learning variants
 
 ## Key points
 The details of problem solved in above codes can be found in file [Task details](https://github.com/PRATEEKKUMARAGNIHOTRI/Muon-Momentum-Estimation-and-Particle-Identification/blob/master/Task%20details.pdf). Their solutions with well explained code can be found in jupyter notebooks.
