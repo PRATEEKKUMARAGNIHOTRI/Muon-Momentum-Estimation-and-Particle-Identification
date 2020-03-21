@@ -2,9 +2,9 @@
 Muon momentum estimation using GNNs and other deep learning variants
 
 ## Key points
-The details of problem solved in above codes can be found in file [Task details](https://github.com/PRATEEKKUMARAGNIHOTRI/Muon-Momentum-Estimation-and-Particle-Identification/blob/master/Task%20details.pdf). Their solutions with well explained code and jupyter notebooks.
+The details of problem solved in above codes can be found in file [Task details](https://github.com/PRATEEKKUMARAGNIHOTRI/Muon-Momentum-Estimation-and-Particle-Identification/blob/master/Task%20details.pdf). Their solutions with well explained code can be found in jupyter notebooks.
 
-Some key points are -
+Some key points in the solution are -
 
 Task-3:
 
@@ -26,12 +26,7 @@ Task-3:
 
 Task-2:
 
-(Attached image)
-
-Input1 (XY-projection of path) --> CNN1<br>
-Input2 (YZ-projection of path) --> CNN2  -----> Concatenate outputs -----> Dense<br>
-Input3 (XZ-projection of path) --> CNN3<br>
-Input4    (Other features)    --> Dense
+![Attached image](https://github.com/PRATEEKKUMARAGNIHOTRI/Muon-Momentum-Estimation-and-Particle-Identification/blob/master/raw/Model%20Architecture%20Task2.PNG)
 
 + Path of particles are projected in XY, YZ and XZ planes and converted into images
 
