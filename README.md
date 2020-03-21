@@ -6,7 +6,7 @@ The details of problem solved in above codes can be found in file [Task details]
 
 Some key points in the solution are -
 
-###Task-3:
+### Task-3:
 
 (Input --> Node representation --> Graph representation --> Classify)
 
@@ -24,7 +24,7 @@ Some key points in the solution are -
 
 + Dropout in dense layers
 
-###Task-2:
+### Task-2:
 
 ![Attached image](https://github.com/PRATEEKKUMARAGNIHOTRI/Muon-Momentum-Estimation-and-Particle-Identification/blob/master/raw/Model%20Architecture%20Task2.PNG)
 
@@ -36,7 +36,7 @@ Some key points in the solution are -
 
 + Output of three fully connected CNNs and a dense NN are concatenated and passed to a dense NN to generate output
 
-###Task-1:
+### Task-1:
 
 + Features are standarized
 
