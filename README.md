@@ -1,6 +1,58 @@
 # Muon-Momentum-Estimation-and-Particle-Identification
 Muon momentum estimation using GNNs and other deep learning variants
 
+## Key points
+The details of problem solved in above codes can be found in file [Task details](). Their solutions with well explained code and jupyter notebooks.<br>
+Some key points are - <br>
+Task-3:
+
+(Input --> Node representation --> Graph representation --> Classify)
+
++ Used Pytorch geometric to code
+
++ Fully connected graph topology with learnable edge features in intermediate MPL layers (Reference - https://dl4physicalsciences.github.io/files/nips_dlps_2017_29.pdf )
+
++ Custom written MPL convolution layer and SAGE convolution are used to generate node representation
+
++ TopKPooling to get relevant nodes
+
++ Global Mean Pooling and Global Max pooling to generate graph representation
+
++ Skip or residual connections are added to all layers ( i.e. graph convolution layers, pooled graph representations and dense layers)
+
++ Dropout in dense layers
+
+Task-2:
+
+(Attached image)
+
+Input1 (XY-projection of path) --> CNN1
+Input2 (YZ-projection of path) --> CNN2  -----> Concatenate outputs -----> Dense
+Input3 (XZ-projection of path) --> CNN3
+Input4    (Other features)    --> Dense
+
++ Path of particles are projected in XY, YZ and XZ planes and converted into images
+
++ Obtained single channel images are passed to three different CNNs
+
++ Other features are passed through a dense NN
+
++ Output of three fully connected CNNs and a dense NN are concatenated and passed to a dense NN to generate output
+
+Task-1:
+
++ Features are standarized
+
++ Features with zero variance are dropped
+
++ nan is replaced with zero
+
++ A dense NN is trained
+
++ Callbacks like - Save best model, early stopping, reduce lr on plateau are used durong training models of all three tasks
+
+Note - Due to less time and limited colab hardware, task two and three are trained using a subsample of entire datasets (1500 samples in task 2 and 1 npz file in task 3), but samples are sufficient enough to show that code is working and models are training quite well.
+
 ## Dataset for Task 1 and 2
 The first two tasks use Monte-Carlo simulated data from the Cathode Strip Chambers (CSC) at the CMS experiment.
 These chambers detect muon particles in the outer layer of the CMS detector, allowing us to store information about the hit locations.<br>
